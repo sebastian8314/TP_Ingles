@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores y Códigos ASCII</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/2.css">
+    <style>
+        .color-box {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="btn btn-secondary" href="index.html">Aprender Inglés <i class="bi bi-reply"></i></a>
+        <a class="navbar-brand" href="#">  Colores y Códigos ASCII</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="submenuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Colores
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="submenuDropdown">
+                        <a class="dropdown-item" href="#primary">Colores Primarios</a>
+                        <a class="dropdown-item" href="#secondary">Colores Secundarios</a>
+                        <a class="dropdown-item" href="#tertiary">Colores Terciarios</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#activities">Actividades <i class="bi-alarm"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido de la página -->
+    <div class="container mt-4">
+        <!-- Colores Primarios -->
+        <div id="primary">
+            <h2>Colores Primarios</h2>
+            <ul>
+                <li><div class="color-box" style="background-color: red;"></div>Rojo - Red (Código ASCII: &#35;FF0000)</li>
+                <li><div class="color-box" style="background-color: blue;"></div>Azul - Blue (Código ASCII: &#35;0000FF)</li>
+                <li><div class="color-box" style="background-color: yellow;"></div>Amarillo - Yellow (Código ASCII: &#35;FFFF00)</li>
+            </ul>
+        </div>
+        <hr>
+        <!-- Colores Secundarios -->
+        <div id="secondary">
+            <h2>Colores Secundarios</h2>
+            <ul>
+                <li><div class="color-box" style="background-color: green;"></div>Verde - Green (Código ASCII: &#35;008000)</li>
+                <li><div class="color-box" style="background-color: purple;"></div>Púrpura - Purple (Código ASCII: &#35;800080)</li>
+                <li><div class="color-box" style="background-color: orange;"></div>Naranja - Orange (Código ASCII: &#35;FFA500)</li>
+            </ul>
+        </div>
+        <hr>
+        <!-- Colores Terciarios -->
+        <div id="tertiary">
+            <h2>Colores Terciarios</h2>
+            <ul>
+                <li><div class="color-box" style="background-color: teal;"></div>Verde Azulado - Teal (Código ASCII: &#35;008080)</li>
+                <li><div class="color-box" style="background-color: violet;"></div>Violeta - Violet (Código ASCII: &#35;EE82EE)</li>
+                <li><div class="color-box" style="background-color: chartreuse;"></div>Chartreuse (Código ASCII: &#35;7FFF00)</li>
+            </ul>
+        </div>
+        <hr>
+        <!-- Sección de actividades -->
+        <div id="activities">
+            <h2>Actividades <i class="bi bi-activity"></i></h2>
+            <p>Traduce los siguientes colores de español a inglés y viceversa:</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Español a Inglés</h3>
+                    <ol>
+                        <li>Rojo - Red</li>
+                        <li>Verde - Green</li>
+                        <li>Azul - Blue</li>
+                        <li>Amarillo - Yellow</li>
+                        <li>Púrpura - Purple</li>
+                    </ol>
+                </div>
+                <div class="col-md-6">
+                    <h3>Inglés a Español</h3>
+                    <ol>
+                        <li>Orange - Naranja</li>
+                        <li>Teal - Verde Azulado</li>
+                        <li>Violet - Violeta</li>
+                        <li>Chartreuse - Chartreuse</li>
+                        <li>Black - Negro</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts de Bootstrap y JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

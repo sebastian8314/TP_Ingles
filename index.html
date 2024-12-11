@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingles Aplicado - 4to año - Escuela PROA 2024</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/1.css">
+    
+</head>
+<body class="light-mode">
+    <!-- Navbar bilingüe -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Ingles Aplicado - 4to año - Escuela PROA 2024 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-badge-ar-fill" viewBox="0 0 16 16">
+            <path d="m6.031 8.574-.734-2.426h-.052L4.51 8.574h1.52zm3.642-2.641v1.938h1.033c.66 0 1.068-.316 1.068-.95 0-.64-.422-.988-1.05-.988z"/>
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm4.265 5.458h2.004L6.739 11H8L5.996 5.001H4.607L2.595 11h1.2zM8.5 5v6h1.173V8.763h1.064L11.787 11h1.327L11.91 8.583C12.455 8.373 13 7.779 13 6.9c0-1.147-.773-1.9-2.105-1.9z"/>
+          </svg></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item dropdown">
+                    <a class="btn btn-light" href="#" id="themeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Cambiar Idioma <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                            <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
+                            <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+                          </svg>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="themeDropdown">
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('es')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                            <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"/>
+                          </svg>  Español</a>
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('en')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                            <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"/>
+                          </svg> English</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="btn btn-light" href="#" id="themeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Cambiar Tema <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                            <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
+                            <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+                          </svg>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="themeDropdown">
+                        <a class="dropdown-item" href="#" onclick="changeTheme('light')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
+                            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                          </svg> Brillante</a>
+                        <a class="dropdown-item" href="#" onclick="changeTheme('dark')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                            <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+                          </svg> Oscuro</a>
+                        <a class="dropdown-item" href="#" onclick="changeTheme('auto')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cpu" viewBox="0 0 16 16">
+                            <path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0m-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"/>
+                          </svg> Automático</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido de la página -->
+    <div class="container mt-4" id="content">
+        <!-- Español -->
+        <div id="es" class="video">
+            <h1>Aprender hablar Inglés</h1>
+            <p class="font-italic font-weight-bold"><img src="img/1.png" alt="Ingles Aplicado" class="img-fluid"><br>El inglés es una habilidad muy valorada en la programación y la tecnología. El inglés puede ser útil para: 
+                Entender mejor el mundo de los códigos 
+                Acceder a recursos y documentación técnica que solo están disponibles en inglés 
+                Comunicarse con colegas de todo el mundo en proyectos internacionales 
+                Tener una base de usuarios más amplia 
+                Para trabajar como programador en inglés, se recomienda tener un nivel de inglés intermedio alto. Algunos consejos para aprender inglés para programadores son: Obtener una certificación, Escuchar podcasts sobre programación, Leer libros sobre programación en inglés, Unirse a grupos virtuales de habla inglesa, Seguir webs sobre programación. </p>
+            
+            <video src="video/La importancia del ingles.mp4" controls class="mt-2"></video><br>
+            <h2>Aprender Inglés - Consejos</h2>
+            <ul>
+                <li><a href="actividad_to_be.html">Verbo to be: El verbo “to be” se utiliza para describir estados y características. Ejemplo: "Soy estudiante".</a></li> 
+                <li><a href="actividad_Pro_pers.html">Pronombres personales: Los pronombres personales incluyen "yo", "tú", "él", "ella", "ello", "nosotros", "ellos".</a></li> 
+                <li><a href="actividad_pre_simple.html">Presente simple: Se utiliza para describir acciones habituales. Ejemplo: "Estudio todos los días"..</a></li> 
+                <li><a href="actividad_pre_continuo.html">Presente continuo: se utiliza para describir acciones que suceden ahora. Ejemplo: "Estoy estudiando ahora".</a></li> 
+                <li><a href="actividad_pasado_simple.html">Pasado simple: Se utiliza para describir acciones que sucedieron en el pasado. Ejemplo: "Estudié ayer".</a></li>
+                <li><a href="actividad_adjetivos.html">Los adjetivos en inglés son palabras que modifican a un sustantivo o pronombre para dar información adicional o describirlo. Por ejemplo, en la oración "Tom is a nice guy", el adjetivo "nice" describe al sustantivo "guy"</a></li>
+                <li><a href="colores.html">Los colores y sus códigos ASCII, y practicas de actividades de traducción</a></li>
+                <li><a href="numeros.html">Los Números, practicas de actividades de traducción</a></li>
+            </ul><br>
+        </div>
+        <!-- Inglés -->
+        <div id="en" style="display:none;">
+            <h1>Learn to speak English</h1>
+            <p class="font-italic font-weight-bold"><img src="img/1.png" alt="Ingles Aplicado" class="img-fluid"><br>English is a highly valued skill in programming and technology. 
+                English can be useful for: Better understanding the world of code Accessing resources and technical documentation that are only available in English Communicating with colleagues around the world on international projects Having a broader user base To work as a programmer in English, It is recommended to have a high intermediate level of English. Some tips for learning English for programmers are: Get a certification, Listen to podcasts about programming, Read books about programming in English, Join virtual English-speaking groups, Follow websites about programming.</p>
+            <video src="video/La importancia del ingles.mp4" controls class="mt-2"></video><br>
+            <h2>Learn English - Tips</h2>
+            <ul>
+                <li><a href="actividad_to_be.html">Verb to be: The verb "to be" is used to describe states and characteristics. Example: "I am a student".</a></li>
+                <li><a href="actividad_Pro_pers.html">Personal pronouns: Personal pronouns include "I", "you", "he", "she", "it", "we", "they".</a></li>
+                <li><a href="actividad_pre_simple.html">Simple present: Used to describe habitual actions. Example: "I study every day".</a></li>
+                <li><a href="actividad_pre_continuo.html">Present continuous: Used to describe actions happening now. Example: "I am studying now".</a></li>
+                <li><a href="actividad_pasado_simple.html">Simple past: Used to describe actions that happened in the past. Example: "I studied yesterday".</a></li>
+                <li><a href="actividad_adjetivos.html">Adjectives in English are words that modify a noun or pronoun to give additional information or describe it. For example, in the sentence "Tom is a nice guy," the adjective "nice" describes the noun "guy."</a></li>
+                <li><a href="colores.html">Colors and their ASCII codes, and practice translation activities</a></li>
+                <li><a href="numeros.html">Numbers, translation activity practices</a></li>
+            </ul><br>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ingles Aplicado - 4to año - Escuela PROA. Alumno Francisco A. Lopez Cejas Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap y JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function changeLanguage(language) {
+            if (language === 'es') {
+                document.getElementById('es').style.display = 'block';
+                document.getElementById('en').style.display = 'none';
+            } else {
+                document.getElementById('es').style.display = 'none';
+                document.getElementById('en').style.display = 'block';
+            }
+        }
+
+        function changeTheme(theme) {
+            if (theme === 'dark') {
+                document.body.className = 'dark-mode';
+            } else if (theme === 'light') {
+                document.body.className = 'light-mode';
+            } else {
+                var currentHour = new Date().getHours();
+                if (currentHour >= 7 && currentHour <= 19) {
+                    document.body.className = 'light-mode';
+                } else {
+                    document.body.className = 'dark-mode';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
