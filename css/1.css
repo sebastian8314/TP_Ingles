@@ -64,6 +64,11 @@
            margin-left: 5%;
        }
 
+       #es ul, li {
+        font: italic;
+        font-weight: 200;
+    }
+
 
        footer {
            background-color: #f8f9fa;
